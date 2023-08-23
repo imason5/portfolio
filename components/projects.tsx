@@ -36,14 +36,14 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
             </li>
           ))}
         </ul>
-        <div className="absolute -right-40 top-8 h-[20rem] w-[25rem] overflow-hidden">
+        <div className="absolute -right-40 top-8 h-[25rem] w-[30rem] scale-90 transform overflow-hidden rounded-t-lg">
           <Image
             src={imageUrl}
             alt="Project example"
             quality={95}
             layout="fill"
-            objectFit="cover"
-            objectPosition="top left"
+            objectFit="contain"
+            objectPosition="top"
           />
         </div>
       </div>
