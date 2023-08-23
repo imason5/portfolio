@@ -47,26 +47,30 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Nourish.Me",
-    description: "",
-    tags: ["React", "MongoDB"],
+    description:
+      "Nourish.Me is a mobile-optimized web application that utilizes CRUD operations and an external API to help users manage their diet and nutrition goals. ",
+    tags: ["React", "Node.js", "Express", "MongoDB", "Chakra UI"],
     imageUrl: nourishmeIMG,
   },
   {
     title: "FitQuest",
-    description: "",
+    description:
+      "FitQuest is a fitness tracking app that supports full CRUD operations, enabling users to create, track, edit, and delete daily workouts.",
     tags: [],
     imageUrl: fitquestIMG,
   },
   {
     title: "Invaders!",
-    description: "",
-    tags: [""],
+    description:
+      "A Space Invaders game made with HTML5 Canvas, CSS and JavaScript. Theme inspiration was taken from the classic arcade game and an episode of Futurama.",
+    tags: [],
     imageUrl: invadersIMG,
   },
   {
     title: "Personal Portfolio",
     description: "",
     tags: ["NextJS", "TailwindCSS"],
+    imageUrl: invadersIMG,
   },
 ] as const;
 
