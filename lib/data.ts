@@ -9,10 +9,6 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
-  },
-  {
     name: "Projects",
     hash: "#projects",
   },
@@ -25,6 +21,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "About",
+    hash: "#about",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -32,7 +32,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
+    title: "Ironhack",
     location: "Remote, UK",
     description: "",
     icon: React.createElement(LuGraduationCap),
