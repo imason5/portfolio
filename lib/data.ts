@@ -51,6 +51,7 @@ export const projectsData = [
       "Nourish.Me is a mobile-optimized web application that utilizes CRUD operations and an external API to help users manage their diet and nutrition goals. ",
     tags: ["React", "Node.js", "Express", "MongoDB", "Chakra UI"],
     imageUrl: nourishmeIMG,
+    link: "https://github.com/Clem0nt25/Nourish.Me_Frontend",
   },
   {
     title: "FitQuest",
@@ -58,6 +59,7 @@ export const projectsData = [
       "FitQuest is a fitness tracking app that supports full CRUD operations, enabling users to create, track, edit, and delete daily workouts.",
     tags: ["JavaScript", "Node.js", "Express", "MongoDB", "Bootstrap"],
     imageUrl: fitquestIMG,
+    link: "https://github.com/imason5/FitQuest",
   },
   {
     title: "Invaders!",
@@ -65,11 +67,13 @@ export const projectsData = [
       "A Space Invaders game made with HTML5 Canvas, CSS and JavaScript. Theme inspiration was taken from the classic arcade game and an episode of Futurama.",
     tags: ["JavaScript", "HTML5 Canvas", "CSS"],
     imageUrl: invadersIMG,
+    link: "https://github.com/imason5/Invaders-Possibly-From-Space-",
   },
   {
     title: "Personal Portfolio",
     description: "",
     tags: ["NextJS", "TailwindCSS"],
+    link: "https://github.com/imason5/portfolio",
   },
 ] as const;
 
