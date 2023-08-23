@@ -2,6 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
 
 function Intro() {
   return (
@@ -37,8 +40,9 @@ function Intro() {
           </motion.span>
         </motion.div>
       </div>
-      <div className="mt-8 items-center justify-center text-center text-2xl font-semibold !leading-[2] sm:text-4xl">
+      <div className="mt-8 text-center text-2xl font-medium !leading-[2] sm:text-4xl">
         <motion.h1
+          className="font-bold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.35, duration: 1 }}
@@ -50,16 +54,43 @@ function Intro() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          I&rsquo;m <span className="font-bold text-[#fd4370]">Ian</span>.
+          I'm <span className="font-bold text-[#fd4370]">Ian</span>.
         </motion.h1>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.25, duration: 1 }}
         >
-          A Full-Stack Web Developer
+          A <span className="font-bold ">Full-Stack Web Developer</span>.
         </motion.h1>
       </div>
+
+      <motion.div
+        className="mt-5 flex flex-col items-center justify-center gap-4 text-lg font-medium sm:flex-row "
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 3.5, duration: 1 }}
+      >
+        <Link
+          href="#projects"
+          className="group flex items-center rounded-full  bg-[#131628] px-7 py-3 text-white transition hover:scale-110 hover:bg-[#fd4370] active:scale-95"
+        >
+          See My Projects
+          <BsArrowRight className="ml-1 text-xl opacity-70 transition group-hover:translate-x-2" />
+        </Link>
+        <a
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-110 hover:text-[#fd4370] active:scale-95"
+          href="https://www.linkedin.com/in/imason5/"
+        >
+          <BsLinkedin size={24} />
+        </a>
+        <a
+          className="flex cursor-pointer items-center gap-2 rounded-full bg-white  p-4 text-gray-700 transition hover:scale-110 hover:text-[#fd4370] active:scale-95"
+          href="https://github.com/imason5"
+        >
+          <FaGithubSquare size={28} />
+        </a>
+      </motion.div>
     </section>
   );
 }

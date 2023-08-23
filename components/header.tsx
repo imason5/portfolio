@@ -29,7 +29,7 @@ export default function Header() {
                 height={125}
                 width={125}
                 quality={100}
-                className="transform transition-transform hover:scale-110"
+                className="transition hover:scale-110 active:scale-95"
               />
             </Link>
 
@@ -40,7 +40,7 @@ export default function Header() {
                 .map((link) => (
                   <li
                     key={link.hash}
-                    className="transition hover:text-white hover:underline hover:decoration-[#fd4370] hover:decoration-2 hover:underline-offset-4 sm:text-lg"
+                    className=" transition hover:text-white hover:underline hover:decoration-[#fd4370] hover:decoration-2 hover:underline-offset-4 sm:text-lg"
                   >
                     <Link href={link.hash}>{link.name}</Link>
                   </li>
