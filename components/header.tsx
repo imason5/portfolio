@@ -3,27 +3,34 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="z-[999] flex w-full items-center justify-center">
       <motion.div
-        className="sm:px-10shadow-lg flex h-[5rem] w-full items-center justify-center border border-white border-opacity-40 bg-white bg-opacity-80 px-4 shadow-black/[0.03] backdrop-blur-[0.5rem] sm:px-10"
+        className="sm:px-10shadow-lg flex h-[5rem] w-full items-center justify-center  bg-[#131628] bg-opacity-90 px-4 shadow-black/[0.03] backdrop-blur-[0.5rem] sm:px-10"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
         <div className="mx-auto flex w-full max-w-6xl">
           <motion.nav
-            className="flex w-full justify-between text-base font-medium text-gray-500"
+            className="flex w-full justify-between text-base font-medium text-[#d1d5e8]"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
             {/* Render the Home link */}
             <Link
               href={links.find((link) => link.name === "Home")?.hash || "#"}
-              className=" transition hover:text-gray-950 sm:text-lg"
             >
-              Home
+              <Image
+                src="/logo.png"
+                alt="Ian Mason"
+                height={125}
+                width={125}
+                quality={100}
+                className="transform transition-transform hover:scale-110"
+              />
             </Link>
 
             {/* Group the rest of the links */}
@@ -33,7 +40,7 @@ export default function Header() {
                 .map((link) => (
                   <li
                     key={link.hash}
-                    className=" transition hover:text-gray-950 sm:text-lg"
+                    className="transition hover:text-white hover:underline hover:decoration-[#fd4370] hover:decoration-2 hover:underline-offset-4 sm:text-lg"
                   >
                     <Link href={link.hash}>{link.name}</Link>
                   </li>
