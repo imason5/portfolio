@@ -56,21 +56,20 @@ export const projectsData = [
     title: "FitQuest",
     description:
       "FitQuest is a fitness tracking app that supports full CRUD operations, enabling users to create, track, edit, and delete daily workouts.",
-    tags: [],
+    tags: ["JavaScript", "Node.js", "Express", "MongoDB", "Bootstrap"],
     imageUrl: fitquestIMG,
   },
   {
     title: "Invaders!",
     description:
       "A Space Invaders game made with HTML5 Canvas, CSS and JavaScript. Theme inspiration was taken from the classic arcade game and an episode of Futurama.",
-    tags: [],
+    tags: ["JavaScript", "HTML5 Canvas", "CSS"],
     imageUrl: invadersIMG,
   },
   {
     title: "Personal Portfolio",
     description: "",
     tags: ["NextJS", "TailwindCSS"],
-    imageUrl: invadersIMG,
   },
 ] as const;
 

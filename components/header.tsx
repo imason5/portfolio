@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="z-[999] flex w-full items-center justify-center">
+    <header className="sticky top-0 z-[999] flex w-full items-center justify-center">
       <motion.div
         className="sm:px-10shadow-lg flex h-[5rem] w-full items-center justify-center  bg-[#131628] bg-opacity-90 px-4 shadow-black/[0.03] backdrop-blur-[0.5rem] sm:px-10"
         initial={{ y: -100, opacity: 0 }}
