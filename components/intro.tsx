@@ -79,16 +79,16 @@ function Intro() {
           <BsArrowRight className="ml-1 text-xl opacity-70 transition group-hover:translate-x-2" />
         </Link>
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-110 hover:text-[#fd4370] active:scale-95"
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95"
           href="https://www.linkedin.com/in/imason5/"
         >
           <BsLinkedin size={24} />
         </a>
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full bg-white  p-4 text-gray-700 transition hover:scale-110 hover:text-[#fd4370] active:scale-95"
+          className="flex cursor-pointer items-center gap-2 rounded-full border  border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95"
           href="https://github.com/imason5"
         >
-          <FaGithubSquare size={28} />
+          <FaGithubSquare size={24} />
         </a>
       </motion.div>
     </section>

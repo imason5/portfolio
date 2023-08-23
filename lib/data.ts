@@ -3,6 +3,10 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
+import fitquestIMG from "@/public/fitquest.png";
+import nourishmeIMG from "@/public/nourishme.png";
+import invadersIMG from "@/public/invaders.png";
+
 export const links = [
   {
     name: "Home",
@@ -42,19 +46,27 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "",
+    title: "Nourish.Me",
     description: "",
     tags: ["React", "MongoDB"],
+    imageUrl: nourishmeIMG,
   },
   {
-    title: "",
+    title: "FitQuest",
     description: "",
     tags: [],
+    imageUrl: fitquestIMG,
   },
   {
-    title: "",
+    title: "Invaders!",
     description: "",
     tags: [""],
+    imageUrl: invadersIMG,
+  },
+  {
+    title: "Personal Portfolio",
+    description: "",
+    tags: ["NextJS", "TailwindCSS"],
   },
 ] as const;
 
