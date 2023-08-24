@@ -1,13 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
     <header className="sticky top-0 z-[999] flex w-full items-center justify-center">
@@ -25,10 +26,14 @@ export default function Header() {
             {/* Render the Home link */}
             <Link
               href={links.find((link) => link.name === "Home")?.hash || "#"}
-              className={clsx("transition active:scale-95", {
-                "scale-110": activeSection === "Home",
-                "hover:scale-110": activeSection !== "Home",
-              })}
+              className={clsx(
+                "transition-all duration-300 ease-in-out active:scale-95",
+                {
+                  "scale-110": activeSection === "Home",
+                  "hover:scale-110": activeSection !== "Home",
+                },
+              )}
+              onClick={() => setActiveSection("Home")}
             >
               <Image
                 src="/logo.png"
@@ -46,14 +51,22 @@ export default function Header() {
                 .map((link) => (
                   <li
                     key={link.hash}
-                    className={clsx("transition sm:text-lg", {
-                      "text-white underline decoration-[#fd4370] decoration-2 underline-offset-4":
-                        activeSection === link.name,
-                      "hover:text-white hover:underline hover:decoration-[#fd4370] hover:decoration-2 hover:underline-offset-4":
-                        activeSection !== link.name,
-                    })}
+                    className={clsx(
+                      "transition-all duration-300 ease-in-out sm:text-lg",
+                      {
+                        "text-white underline decoration-[#fd4370] decoration-2 underline-offset-4":
+                          activeSection === link.name,
+                        "hover:text-white hover:underline hover:decoration-[#fd4370] hover:decoration-2 hover:underline-offset-4":
+                          activeSection !== link.name,
+                      },
+                    )}
                   >
-                    <Link href={link.hash}>{link.name} </Link>
+                    <Link
+                      href={link.hash}
+                      onClick={() => setActiveSection(link.name)}
+                    >
+                      {link.name}{" "}
+                    </Link>
                   </li>
                 ))}
             </ul>
