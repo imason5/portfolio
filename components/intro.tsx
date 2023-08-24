@@ -1,14 +1,24 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 function Intro() {
+  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
   return (
-    <section className="mt-5 scroll-mt-[100rem]" id="home">
+    <section className="mt-5 scroll-mt-[100rem]" id="home" ref={ref}>
       <div className="flex items-center justify-center">
         <motion.div
           className="relative h-48 w-48 rounded-full border-[0.35rem] border-white shadow-xl"
