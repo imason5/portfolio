@@ -13,6 +13,10 @@ export const links = [
     hash: "#home",
   },
   {
+    name: "About",
+    hash: "#about",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
@@ -23,10 +27,6 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
-  },
-  {
-    name: "About",
-    hash: "#about",
   },
   {
     name: "Contact",
@@ -72,7 +72,7 @@ export const projectsData = [
   {
     title: "Personal Portfolio",
     description: "",
-    tags: ["NextJS", "TailwindCSS"],
+    tags: ["Next.JS", "Tailwind", "Framer Motion"],
     link: "https://github.com/imason5/portfolio",
   },
 ] as const;

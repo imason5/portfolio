@@ -8,7 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 function Intro() {
   return (
-    <section className="mt-5">
+    <section className="mt-5 scroll-mt-[100rem]" id="home">
       <div className="flex items-center justify-center">
         <motion.div
           className="relative h-48 w-48 rounded-full border-[0.35rem] border-white shadow-xl"
