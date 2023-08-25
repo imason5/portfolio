@@ -77,17 +77,17 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "MongoDB",
-  "Express",
-  "Framer Motion",
-] as const;
+export const skillsIcons = {
+  HTML: "html",
+  CSS: "css",
+  JavaScript: "js",
+  TypeScript: "ts",
+  React: "react",
+  "Next.js": "nextjs",
+  "Node.js": "nodejs",
+  Git: "git",
+  Tailwind: "tailwind",
+  MongoDB: "mongodb",
+  Express: "express",
+  // ... any additional mappings
+};

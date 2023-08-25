@@ -8,7 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 
 function Intro() {
-  const { ref } = useSectionInView("Home");
+  const { ref } = useSectionInView("Home", 0.5);
 
   return (
     <section className="mt-5 scroll-mt-[100rem]" id="home" ref={ref}>
