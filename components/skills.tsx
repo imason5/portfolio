@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { skillsIcons } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 
 type Skill = keyof typeof skillsIcons;
 
@@ -11,6 +12,20 @@ const generateSkillUrl = (skill: Skill): string | null => {
   return skillsIcons[skill]
     ? `https://skillicons.dev/icons?i=${skillsIcons[skill]}`
     : null;
+};
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
 };
 
 export default function Skills() {
@@ -26,9 +41,16 @@ export default function Skills() {
         {Object.keys(skillsIcons).map((skill, index) => {
           const skillUrl = generateSkillUrl(skill as Skill);
           return (
-            <li
+            <motion.li
               className="flex h-32 w-32 flex-col items-center justify-center gap-2 rounded-xl border border-black/[0.1] bg-white "
               key={index}
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={index}
             >
               {skillUrl && (
                 <img
@@ -39,7 +61,7 @@ export default function Skills() {
                 />
               )}
               {skill}
-            </li>
+            </motion.li>
           );
         })}
       </ul>

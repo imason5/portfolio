@@ -84,10 +84,10 @@ export const skillsIcons = {
   TypeScript: "ts",
   React: "react",
   "Next.js": "nextjs",
-  "Node.js": "nodejs",
-  Git: "git",
   Tailwind: "tailwind",
+  "Node.js": "nodejs",
   MongoDB: "mongodb",
   Express: "express",
+  Git: "git",
   // ... any additional mappings
 };
