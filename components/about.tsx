@@ -8,13 +8,13 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function About() {
   const { ref, inView } = useInView({ threshold: 0.75 });
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection("About");
     }
-  }, [inView, setActiveSection]);
+  }, [inView, setActiveSection, timeOfLastClick]);
 
   return (
     <motion.section
@@ -27,9 +27,9 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="text-gray-700">
-        I am a web developer based in London, UK. A recent Ironhack Full-time
-        Web Development Bootcamp graduate, I have a passion for building
-        beautiful and accessible websites and applications.
+        I am a full-stack web developer based in London, UK. A recent Ironhack
+        Full-time Web Development Bootcamp graduate, I have a passion for
+        building beautiful and accessible websites and applications.
       </p>
     </motion.section>
   );

@@ -65,14 +65,14 @@ export const projectsData = [
     title: "Invaders!",
     description:
       "A Space Invaders game made with HTML5 Canvas, CSS and JavaScript. Theme inspiration was taken from the classic arcade game and an episode of Futurama.",
-    tags: ["JavaScript", "HTML5 Canvas", "CSS"],
+    tags: ["JavaScript", "HTML5", "Canvas", "CSS"],
     imageUrl: invadersIMG,
     link: "https://github.com/imason5/Invaders-Possibly-From-Space-",
   },
   {
     title: "Personal Portfolio",
     description: "",
-    tags: ["Next.JS", "Tailwind", "Framer Motion"],
+    tags: ["Next.JS", "TypeScript", "Tailwind", "Framer Motion"],
     link: "https://github.com/imason5/portfolio",
   },
 ] as const;
