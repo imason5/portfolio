@@ -28,7 +28,7 @@ export default function Project({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="group mb-3 last:mb-0 sm:mb-8 "
+      className="group mb-3 last:mb-0 "
     >
       <section className="relative  max-w-[42rem] overflow-hidden rounded-lg  border border-black/5 bg-gray-100 transition  hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8">
         <Link href={link}>

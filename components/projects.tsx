@@ -15,7 +15,7 @@ export default function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 4, duration: 1 }}
       id="projects"
-      className="mb-[2rem] scroll-mt-28 sm:mb-0"
+      className="scroll-mt-28 "
       ref={ref}
     >
       <SectionHeading>My Projects</SectionHeading>
