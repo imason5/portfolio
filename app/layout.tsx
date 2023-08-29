@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
 
 export const metadata: Metadata = {
   title: "Ian Mason | Personal Portfolio",
@@ -30,6 +31,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </ActiveSectionContextProvider>
+
+        <ThemeSwitch />
       </body>
     </html>
   );

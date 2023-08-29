@@ -67,12 +67,6 @@ export const projectsData = [
     imageUrl: invadersIMG,
     link: "https://github.com/imason5/Invaders-Possibly-From-Space-",
   },
-  {
-    title: "Personal Portfolio",
-    description: "",
-    tags: ["Next.JS", "TypeScript", "Tailwind", "Framer Motion"],
-    link: "https://github.com/imason5/portfolio",
-  },
 ] as const;
 
 export const skillsIcons = {
