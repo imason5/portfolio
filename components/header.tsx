@@ -50,7 +50,8 @@ export default function Header() {
             </Link>
 
             {/* Group the rest of the links */}
-            <ul className="flex items-center space-x-2 sm:space-x-8 ">
+            <ul className="flex flex-grow flex-wrap items-center justify-center space-x-2 text-sm sm:space-x-8 sm:text-base">
+              {/* ... existing list items ... */}
               {links
                 .filter((link) => link.name !== "Home")
                 .map((link) => (
@@ -77,8 +78,8 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
-              <ThemeSwitch />
             </ul>
+            <ThemeSwitch />
           </motion.nav>
         </div>
       </motion.div>
