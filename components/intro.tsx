@@ -14,7 +14,7 @@ function Intro() {
     <section className="mt-5 scroll-mt-[100rem]" id="home" ref={ref}>
       <div className="flex items-center justify-center">
         <motion.div
-          className="relative h-48 w-48 rounded-full border-[0.35rem] border-white shadow-xl"
+          className="relative h-48 w-48 rounded-full border-[0.35rem] border-white shadow-xl dark:border-white/90"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "tween", duration: 0.25 }}
@@ -29,7 +29,7 @@ function Intro() {
             />
           </div>
           <motion.span
-            className="absolute bottom-0 right-0 text-5xl"
+            className="absolute bottom-0 right-0 text-5xl "
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{
@@ -76,25 +76,25 @@ function Intro() {
       >
         <Link
           href="#projects"
-          className="group flex items-center rounded-full  bg-[#131628] px-7 py-3 text-white transition hover:scale-110 hover:bg-[#fd4370] active:scale-95"
+          className="group flex items-center rounded-full  bg-[#131628] px-7 py-3 text-white transition hover:scale-110 hover:bg-[#fd4370] active:scale-95 dark:text-white/90"
         >
           See My Projects
           <BsArrowRight className="ml-1 text-xl opacity-70 transition group-hover:translate-x-2" />
         </Link>
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95"
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/90"
           href="https://www.linkedin.com/in/imason5/"
         >
           <BsLinkedin size={24} />
         </a>
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full border  border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95"
+          className="flex cursor-pointer items-center gap-2 rounded-full border  border-black/10  bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/90"
           href="https://github.com/imason5"
         >
           <FaGithubSquare size={24} />
         </a>
         <a
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95"
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10  bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/90"
           href="mailto:ianmason5@gmail.com"
         >
           <BsFillEnvelopeFill size={24} />

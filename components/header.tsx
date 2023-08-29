@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import ThemeSwitch from "./theme-switch";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -20,7 +21,7 @@ export default function Header() {
       >
         <div className="mx-auto flex w-full max-w-6xl">
           <motion.nav
-            className="flex w-full justify-between text-base font-medium text-[#d1d5e8]"
+            className="flex w-full items-center justify-between text-base font-medium text-[#d1d5e8]"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
@@ -28,7 +29,7 @@ export default function Header() {
             <Link
               href={links.find((link) => link.name === "Home")?.hash || "#"}
               className={clsx(
-                "transition-all duration-300 ease-in-out active:scale-95",
+                "flex items-center transition-all duration-300 ease-in-out active:scale-95",
                 {
                   "scale-110": activeSection === "Home",
                   "hover:scale-110": activeSection !== "Home",
@@ -49,7 +50,7 @@ export default function Header() {
             </Link>
 
             {/* Group the rest of the links */}
-            <ul className="flex space-x-2 sm:space-x-8 ">
+            <ul className="flex items-center space-x-2 sm:space-x-8 ">
               {links
                 .filter((link) => link.name !== "Home")
                 .map((link) => (
@@ -76,6 +77,7 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
+              <ThemeSwitch />
             </ul>
           </motion.nav>
         </div>

@@ -2,11 +2,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
 
 export const metadata: Metadata = {
   title: "Ian Mason | Personal Portfolio",
@@ -27,14 +27,13 @@ export default function RootLayout({
         <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:w-[68.75rem]"></div>
         {/* Violet Circle */}
         <div className="absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
-
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-          <Footer />
-        </ActiveSectionContextProvider>
-
-        <ThemeSwitch />
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

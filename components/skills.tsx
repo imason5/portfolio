@@ -38,7 +38,7 @@ export default function Skills() {
           const skillUrl = generateSkillUrl(skill as Skill);
           return (
             <motion.li
-              className="flex h-32 w-32 flex-col items-center justify-center gap-2 rounded-xl border border-black/[0.1] bg-white "
+              className="flex h-32 w-32 flex-col items-center justify-center gap-2 rounded-xl border border-black/[0.1] bg-white  dark:bg-white/10 dark:text-white/90"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"

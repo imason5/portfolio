@@ -35,7 +35,7 @@ export const experiencesData = [
     title: "Ironhack",
     location: "Remote, UK",
     description:
-      "I completed the intensive full-time 9-week Ironhack Web Development Bootcamp (500+ hours), acquiring comprehensive skills in front-end and back-end technologies, including JavaScript, HTML5, CSS, MongoDB, Express, ReactJS, and NodeJS.",
+      "I graduated the intensive full-time 9-week Ironhack Web Development Bootcamp (500+ hours), acquiring comprehensive skills in front-end and back-end technologies, including JavaScript, HTML5, CSS, MongoDB, Express, React and Node.js.",
     link: "https://www.ironhack.com/uk/en/web-development/remote",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
