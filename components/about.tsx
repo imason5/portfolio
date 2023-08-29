@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <motion.section
-      className="max-w-[45rem] scroll-mt-28 text-center leading-8 "
+      className="mb-[2rem] max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-0 "
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 4, duration: 1 }}
@@ -18,7 +18,7 @@ export default function About() {
       ref={ref}
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="text-gray-700  dark:text-gray-50 dark:text-opacity-90 ">
+      <p className="text-gray-700  dark:text-gray-50 dark:text-opacity-90  ">
         I am a full-stack web developer based in London, UK. A recent{" "}
         <a href={"https://www.ironhack.com/uk/en/web-development/remote"}>
           <span className="font-bold">

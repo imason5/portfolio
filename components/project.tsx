@@ -32,7 +32,7 @@ export default function Project({
     >
       <section className="relative  max-w-[42rem] overflow-hidden rounded-lg  border border-black/5 bg-gray-100 transition  hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8">
         <Link href={link}>
-          <div className="flex h-full flex-col px-4 py-5 group-even:ml-[18em] sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10">
+          <div className="flex h-full flex-col px-4 py-5 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18em]">
             <h3 className="text-2xl font-semibold text-[#fd4370]">{title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700  dark:text-white/90">
               {description}
@@ -47,7 +47,7 @@ export default function Project({
                 </li>
               ))}
             </ul>
-            <div className="group-even:-right-[initial] group absolute -right-40 top-8 h-[25rem] w-[30rem] scale-100 transform overflow-hidden rounded-t-lg transition group-even:-left-40 group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.05] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2">
+            <div className="group-even:-right-[initial] group absolute -right-40 top-8 hidden h-[25rem] w-[30rem] scale-100 transform overflow-hidden rounded-t-lg transition group-even:-left-40 group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.05] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 sm:block">
               <Image
                 src={imageUrl}
                 alt="Project example"
