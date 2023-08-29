@@ -18,7 +18,7 @@ export default function About() {
       ref={ref}
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="text-gray-700">
+      <p className="text-gray-700  dark:text-gray-50 ">
         I am a full-stack web developer based in London, UK. A recent Ironhack
         Full-time Web Development Bootcamp graduate, I have a passion for
         building beautiful and accessible websites and applications.
