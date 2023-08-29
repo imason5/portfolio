@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin, BsFillEnvelopeFill } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -92,6 +92,12 @@ function Intro() {
           href="https://github.com/imason5"
         >
           <FaGithubSquare size={24} />
+        </a>
+        <a
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95"
+          href="mailto:ianmason5@gmail.com"
+        >
+          <BsFillEnvelopeFill size={24} />
         </a>
       </motion.div>
     </section>
