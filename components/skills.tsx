@@ -27,7 +27,6 @@ const fadeInAnimationVariants = {
     },
   }),
 };
-
 export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.75);
   return (
@@ -42,7 +41,7 @@ export default function Skills() {
           const skillUrl = generateSkillUrl(skill as Skill);
           return (
             <motion.li
-              className="flex h-32 w-32 flex-col items-center justify-center gap-2 rounded-xl border border-black/[0.1] bg-white  dark:bg-white/10 dark:text-white/90"
+              className="flex h-24 w-24 flex-col items-center justify-center gap-2 rounded-xl border border-black/[0.1] bg-white dark:bg-white/10 dark:text-white/90 sm:h-32 sm:w-32"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
@@ -57,7 +56,7 @@ export default function Skills() {
                   src={skillUrl}
                   alt={skill}
                   title={skill}
-                  className="h-12 w-12"
+                  className="h-8 w-8 sm:h-12 sm:w-12"
                 />
               )}
               {skill}
