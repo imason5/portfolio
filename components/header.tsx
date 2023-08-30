@@ -25,8 +25,6 @@ export default function Header() {
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            {/* Render the Home link */}
-            {/* Render the Home link */}
             <Link
               href={links.find((link) => link.name === "Home")?.hash || "#"}
               className={clsx(
@@ -52,9 +50,7 @@ export default function Header() {
               </div>
             </Link>
 
-            {/* Group the rest of the links */}
             <ul className="flex flex-grow flex-wrap items-center justify-center space-x-2 text-sm sm:space-x-8 sm:text-base">
-              {/* ... existing list items ... */}
               {links
                 .filter((link) => link.name !== "Home")
                 .map((link) => (
