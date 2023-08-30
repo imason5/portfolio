@@ -23,10 +23,13 @@ export default function RootLayout({
       <body
         className={`${inter.className} relative bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        {/* Pink Circle */}
-        <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:w-[68.75rem]"></div>
-        {/* Violet Circle */}
-        <div className="absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
+        <div className="absolute left-1/2 top-0 z-[-10] flex w-full max-w-6xl -translate-x-1/2 transform justify-between">
+          {/* Violet Circle */}
+          <div className="z-[-1] ml-[-6rem] mt-[-1rem] h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:ml-[-5rem] sm:w-[68.75rem] md:ml-0 lg:ml-[5rem]"></div>
+          {/* Pink Circle */}
+          <div className="z-[-1] mr-[-6rem] mt-[-1rem] h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:mr-[-5rem] sm:w-[68.75rem] md:mr-0 lg:mr-[5rem]"></div>
+        </div>
+
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />

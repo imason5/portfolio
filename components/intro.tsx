@@ -69,14 +69,14 @@ function Intro() {
       </div>
 
       <motion.div
-        className="mb-[2rem] mt-5 flex flex-col items-center justify-center gap-4 text-lg font-medium sm:mb-0 sm:flex-row"
+        className="mb-[2rem]  mt-5 flex flex-col items-center justify-center gap-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 3.5, duration: 1 }}
       >
         <Link
           href="#projects"
-          className="group flex w-full items-center rounded-full bg-[#131628] px-7 py-3 text-white transition hover:scale-110 hover:bg-[#fd4370] active:scale-95 dark:text-white/90 sm:mb-0 sm:w-auto"
+          className="group flex w-full items-center rounded-full bg-[#131628] px-7 py-3 text-white transition hover:scale-110 hover:bg-[#fd4370] active:scale-95 dark:bg-white dark:text-gray-700 dark:hover:bg-[#fd4370] dark:hover:text-white sm:mb-0 sm:w-auto"
         >
           See My Projects
           <BsArrowRight className="ml-1 text-xl opacity-70 transition group-hover:translate-x-2" />
@@ -84,19 +84,19 @@ function Intro() {
 
         <div className="mt-4 flex w-full justify-center gap-4 sm:mt-0 sm:w-auto">
           <a
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/90"
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-[#fd4370]"
             href="https://www.linkedin.com/in/imason5/"
           >
             <BsLinkedin size={24} />
           </a>
           <a
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/90"
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/10 dark:text-white/90 dark:hover:bg-white/20  dark:hover:text-[#fd4370]"
             href="https://github.com/imason5"
           >
             <FaGithubSquare size={24} />
           </a>
           <a
-            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/90"
+            className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-[#fd4370] active:scale-95 dark:bg-white/10   dark:text-white/90 dark:hover:bg-white/20 dark:hover:text-[#fd4370]"
             href="mailto:ianmason5@gmail.com"
           >
             <BsFillEnvelopeFill size={24} />
