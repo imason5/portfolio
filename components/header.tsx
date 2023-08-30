@@ -26,6 +26,7 @@ export default function Header() {
             animate={{ y: 0, opacity: 1 }}
           >
             {/* Render the Home link */}
+            {/* Render the Home link */}
             <Link
               href={links.find((link) => link.name === "Home")?.hash || "#"}
               className={clsx(
@@ -40,13 +41,15 @@ export default function Header() {
                 setTimeOfLastClick(Date.now());
               }}
             >
-              <Image
-                src="/logo.png"
-                alt="Ian Mason"
-                height={125}
-                width={125}
-                quality={100}
-              />
+              <div className="relative h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32">
+                <Image
+                  src="/logo.png"
+                  alt="Ian Mason"
+                  layout="fill"
+                  objectFit="contain"
+                  quality={100}
+                />
+              </div>
             </Link>
 
             {/* Group the rest of the links */}
