@@ -24,10 +24,10 @@ export default function RootLayout({
         className={`${inter.className} relative overflow-x-hidden bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div className="absolute left-1/2 top-0 z-[-10] flex w-full max-w-6xl -translate-x-1/2 transform justify-between">
-          {/* Violet Circle */}
-          <div className="z-[-1] ml-[-6rem] mt-[-1rem] h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:ml-[-5rem] sm:w-[68.75rem] md:ml-0 lg:ml-[5rem]"></div>
-          {/* Pink Circle */}
-          <div className="z-[-1] mr-[-6rem] mt-[-1rem] h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:mr-[-5rem] sm:w-[68.75rem] md:mr-0 lg:mr-[5rem]"></div>
+          {/* Violet Circle - Hidden on smaller screens */}
+          <div className="z-[-1] ml-[-6rem] mt-[-1rem] hidden h-[31.25rem] w-[50rem] rounded-full bg-[#dbd7fb] blur-[10rem] dark:bg-[#676394] sm:block"></div>
+          {/* Pink Circle - Hidden on smaller screens */}
+          <div className="z-[-1] mr-[-6rem] mt-[-1rem] hidden h-[31.25rem] w-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:block"></div>
         </div>
 
         <ThemeContextProvider>
