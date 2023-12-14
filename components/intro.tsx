@@ -21,8 +21,8 @@ function Intro() {
         >
           <div className="absolute inset-0 overflow-hidden rounded-full">
             <Image
-              src="/profile.jpg"
-              alt="Ian Mason"
+              src="/mountains.jpg"
+              alt="Mountains"
               layout="fill"
               objectFit="cover"
               priority={true}
